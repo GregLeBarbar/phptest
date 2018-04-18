@@ -5,7 +5,7 @@ php:
 
 before_script: 
   composer require "squizlabs/php_codesniffer=*"
-  composer create-project wp-coding-standards/wpcs:dev-master --no-dev
+  composer create-project wp-coding-standards/wpcs:dev-master 
 
 script:
   vendor/bin/phpcs --config-set installed_paths wpcs
